@@ -1,0 +1,488 @@
+2020-05-22 07:05:54.716  WARN 16744 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h58m59s325ms395µs914ns).
+2020-05-22 10:36:22.084  INFO 17592 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 17592 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 10:36:22.087  INFO 17592 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 10:36:27.059  INFO 17592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 10:36:27.244  INFO 17592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162ms. Found 2 repository interfaces.
+2020-05-22 10:36:28.049  INFO 17592 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 10:36:31.469  INFO 17592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 10:36:31.607  INFO 17592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 10:36:31.608  INFO 17592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 10:36:31.627  INFO 17592 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 10:36:31.627  INFO 17592 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 10:36:31.628  INFO 17592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 10:36:31.628  INFO 17592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 10:36:32.853  INFO 17592 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 10:36:33.280  INFO 17592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 10:36:33.281  INFO 17592 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11037 ms
+2020-05-22 10:36:33.428  INFO 17592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 10:36:34.529  INFO 17592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 10:36:34.538  INFO 17592 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 10:36:37.282  INFO 17592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 10:36:37.813  INFO 17592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 10:36:38.187  INFO 17592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 10:36:38.427  INFO 17592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 10:36:40.033  INFO 17592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 10:36:40.043  INFO 17592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 10:36:41.504  WARN 17592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 10:36:42.812  INFO 17592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 10:36:44.219  INFO 17592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 10:36:44.301  INFO 17592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 10:36:44.314  INFO 17592 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 10:36:44.775  INFO 17592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 10:36:44.813  INFO 17592 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 24.155 seconds (JVM running for 28.168)
+2020-05-22 10:37:46.513  INFO 17592 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 10:37:46.514  INFO 17592 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 10:37:46.536  INFO 17592 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-05-22 10:38:45.025  INFO 232 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 232 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 10:38:45.034  INFO 232 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 10:38:46.929  INFO 232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 10:38:47.009  INFO 232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 2 repository interfaces.
+2020-05-22 10:38:47.428  INFO 232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 10:38:47.872  INFO 232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 10:38:47.880  INFO 232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 10:38:47.881  INFO 232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 10:38:47.883  INFO 232 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 10:38:47.883  INFO 232 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 10:38:47.883  INFO 232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 10:38:47.883  INFO 232 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 10:38:48.972  INFO 232 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 10:38:49.109  INFO 232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 10:38:49.110  INFO 232 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3977 ms
+2020-05-22 10:38:49.170  INFO 232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 10:38:49.436  INFO 232 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 10:38:49.444  INFO 232 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 10:38:49.590  INFO 232 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 10:38:49.659  INFO 232 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 10:38:49.796  INFO 232 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 10:38:49.938  INFO 232 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 10:38:50.978  INFO 232 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 10:38:50.985  INFO 232 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 10:38:52.340  WARN 232 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 10:38:52.741  INFO 232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 10:38:53.065  INFO 232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 10:38:53.079  INFO 232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 10:38:53.088  INFO 232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 10:38:53.340  INFO 232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 10:38:53.344  INFO 232 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 8.895 seconds (JVM running for 10.27)
+2020-05-22 10:38:58.825  INFO 232 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 10:38:58.826  INFO 232 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 10:38:58.842  INFO 232 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-05-22 10:39:58.065  WARN 232 --- [http-nio-8090-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 22001, SQLState: 22001
+2020-05-22 10:39:58.066 ERROR 232 --- [http-nio-8090-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Value too long for column """DATA"" VARCHAR(255)": "'        if((temp.equals(""void"")  || temp.equals(""int"") || temp.equals(""float"") || temp.equals(""double"") || temp.equals(""byte"") ... (341)"; SQL statement:
+insert into line (id, ci, cnc, control_structure_complexity_id, coupling_complexity_id, cps, cr, cs, ctc, data, inheritance_complexity_id, line_no, method_complexity_id, size_complexity_id, tw, variable_complexity_id) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-199]
+2020-05-22 10:39:58.177 ERROR 232 --- [http-nio-8090-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement] with root cause
+
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """DATA"" VARCHAR(255)": "'        if((temp.equals(""void"")  || temp.equals(""int"") || temp.equals(""float"") || temp.equals(""double"") || temp.equals(""byte"") ... (341)"; SQL statement:
+insert into line (id, ci, cnc, control_structure_complexity_id, coupling_complexity_id, cps, cr, cs, ctc, data, inheritance_complexity_id, line_no, method_complexity_id, size_complexity_id, tw, variable_complexity_id) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:441) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:824) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:175) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.dml.Insert.update(Insert.java:132) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Command.executeUpdate(Command.java:267) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:200) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:154) ~[h2-1.4.199.jar:1.4.199]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.4.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3106) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3699) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:335) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:292) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:727) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:695) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:298) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:492) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:416) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:218) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:525) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:456) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:419) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:218) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:151) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:464) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:727) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:695) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:298) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:492) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:416) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:218) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:525) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:456) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:419) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:218) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:151) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:464) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:727) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:695) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.spi.CascadingActions$7.cascade(CascadingActions.java:298) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:492) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:416) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:218) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:151) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:432) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:269) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:108) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:703) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:689) ~[hibernate-core-5.4.6.Final.jar:5.4.6.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:368) ~[spring-orm-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.sun.proxy.$Proxy110.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314) ~[spring-orm-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.sun.proxy.$Proxy110.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554) ~[spring-data-jpa-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:353) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at com.sun.proxy.$Proxy123.save(Unknown Source) ~[na:na]
+	at com.sliit.cde.coremodule.service.impl.ProjectServiceImpl.save(ProjectServiceImpl.java:34) ~[classes/:na]
+	at com.sliit.cde.coremodule.controller.ProjectController.saveProject(ProjectController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+
+2020-05-22 11:48:49.626  INFO 19084 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 19084 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 11:48:49.631  INFO 19084 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 11:48:52.598  INFO 19084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 11:48:52.783  INFO 19084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162ms. Found 2 repository interfaces.
+2020-05-22 11:48:53.212  INFO 19084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 11:48:54.192  INFO 19084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 11:48:54.224  INFO 19084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 11:48:54.225  INFO 19084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 11:48:54.228  INFO 19084 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 11:48:54.229  INFO 19084 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 11:48:54.229  INFO 19084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 11:48:54.229  INFO 19084 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 11:48:55.387  INFO 19084 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 11:48:55.657  INFO 19084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 11:48:55.658  INFO 19084 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5827 ms
+2020-05-22 11:48:55.750  INFO 19084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 11:48:56.154  INFO 19084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 11:48:56.163  INFO 19084 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 11:48:56.523  INFO 19084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 11:48:56.647  INFO 19084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 11:48:57.089  INFO 19084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 11:48:57.328  INFO 19084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 11:48:59.257  INFO 19084 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 11:48:59.267  INFO 19084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 11:49:00.768  WARN 19084 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 11:49:01.323  INFO 19084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 11:49:01.856  INFO 19084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 11:49:01.885  INFO 19084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 11:49:01.898  INFO 19084 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 11:49:02.269  INFO 19084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 11:49:02.284  INFO 19084 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 13.836 seconds (JVM running for 22.907)
+2020-05-22 11:49:26.053  INFO 19084 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 11:49:26.054  INFO 19084 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 11:49:26.087  INFO 19084 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
+2020-05-22 15:47:39.766  INFO 14188 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 14188 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 15:47:39.811  INFO 14188 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 15:47:48.213  INFO 14188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 15:47:48.429  INFO 14188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182ms. Found 2 repository interfaces.
+2020-05-22 15:47:49.779  INFO 14188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 15:47:51.185  INFO 14188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 15:47:51.217  INFO 14188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 15:47:51.217  INFO 14188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 15:47:51.226  INFO 14188 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 15:47:51.227  INFO 14188 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 15:47:51.227  INFO 14188 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 15:47:51.227  INFO 14188 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 15:47:52.340  INFO 14188 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 15:47:53.858  INFO 14188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 15:47:53.859  INFO 14188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13427 ms
+2020-05-22 15:47:54.552  INFO 14188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 15:47:55.085  INFO 14188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 15:47:55.111  INFO 14188 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 15:47:55.744  INFO 14188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 15:47:55.938  INFO 14188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 15:47:57.047  INFO 14188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 15:47:57.612  INFO 14188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 15:48:01.226  INFO 14188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 15:48:01.309  INFO 14188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 15:48:24.781  WARN 14188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 15:48:38.175  INFO 14188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 15:48:43.815  INFO 14188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 15:48:44.477  INFO 14188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 15:48:44.488  INFO 14188 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 15:48:47.547  INFO 14188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 15:48:47.619  INFO 14188 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 71.688 seconds (JVM running for 81.641)
+2020-05-22 15:48:49.422  INFO 14188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-22 15:48:49.427  INFO 14188 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 15:48:49.431  INFO 14188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-22 15:48:49.537  INFO 14188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-22 15:52:06.633  INFO 18960 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 18960 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 15:52:06.651  INFO 18960 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 15:52:09.321  INFO 18960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 15:52:09.416  INFO 18960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 2 repository interfaces.
+2020-05-22 15:52:09.866  INFO 18960 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 15:52:10.385  INFO 18960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 15:52:10.398  INFO 18960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 15:52:10.398  INFO 18960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 15:52:10.400  INFO 18960 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 15:52:10.401  INFO 18960 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 15:52:10.402  INFO 18960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 15:52:10.402  INFO 18960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 15:52:11.638  INFO 18960 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 15:52:11.961  INFO 18960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 15:52:11.962  INFO 18960 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5014 ms
+2020-05-22 15:52:12.046  INFO 18960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 15:52:12.232  INFO 18960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 15:52:12.244  INFO 18960 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 15:52:12.449  INFO 18960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 15:52:12.581  INFO 18960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 15:52:12.755  INFO 18960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 15:52:13.055  INFO 18960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 15:52:14.533  INFO 18960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 15:52:14.544  INFO 18960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 15:52:15.563  WARN 18960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 15:52:15.930  INFO 18960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 15:52:16.298  INFO 18960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 15:52:16.314  INFO 18960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 15:52:16.329  INFO 18960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 15:52:16.589  INFO 18960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 15:52:16.592  INFO 18960 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 10.714 seconds (JVM running for 14.54)
+2020-05-22 15:52:28.662  INFO 18960 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 15:52:28.663  INFO 18960 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 15:52:28.702  INFO 18960 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2020-05-22 15:55:33.501  INFO 14988 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 14988 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 15:55:33.507  INFO 14988 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 15:55:35.680  INFO 14988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 15:55:35.889  INFO 14988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192ms. Found 2 repository interfaces.
+2020-05-22 15:55:36.987  INFO 14988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 15:55:38.291  INFO 14988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 15:55:38.305  INFO 14988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 15:55:38.306  INFO 14988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 15:55:38.308  INFO 14988 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 15:55:38.309  INFO 14988 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 15:55:38.310  INFO 14988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 15:55:38.310  INFO 14988 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 15:55:39.494  INFO 14988 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 15:55:39.956  INFO 14988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 15:55:39.956  INFO 14988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6346 ms
+2020-05-22 15:55:40.081  INFO 14988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 15:55:40.285  INFO 14988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 15:55:40.291  INFO 14988 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 15:55:40.462  INFO 14988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 15:55:40.535  INFO 14988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 15:55:40.711  INFO 14988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 15:55:40.917  INFO 14988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 15:55:43.103  INFO 14988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 15:55:43.116  INFO 14988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 15:55:44.787  WARN 14988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 15:55:45.244  INFO 14988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 15:55:45.632  INFO 14988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 15:55:45.646  INFO 14988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 15:55:45.656  INFO 14988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 15:55:45.918  INFO 14988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 15:55:45.923  INFO 14988 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 12.927 seconds (JVM running for 15.704)
+2020-05-22 15:56:29.413  INFO 14988 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 15:56:29.415  INFO 14988 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 15:56:29.438  INFO 14988 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-05-22 15:57:10.731  INFO 8664 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 8664 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 15:57:10.735  INFO 8664 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 15:57:12.584  INFO 8664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 15:57:12.717  INFO 8664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 2 repository interfaces.
+2020-05-22 15:57:13.063  INFO 8664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 15:57:13.569  INFO 8664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 15:57:13.581  INFO 8664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 15:57:13.581  INFO 8664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 15:57:13.583  INFO 8664 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 15:57:13.584  INFO 8664 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 15:57:13.584  INFO 8664 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 15:57:13.585  INFO 8664 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 15:57:14.868  INFO 8664 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 15:57:15.085  INFO 8664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 15:57:15.086  INFO 8664 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4200 ms
+2020-05-22 15:57:15.171  INFO 8664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 15:57:15.440  INFO 8664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 15:57:15.448  INFO 8664 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 15:57:15.661  INFO 8664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 15:57:15.728  INFO 8664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 15:57:15.905  INFO 8664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 15:57:16.251  INFO 8664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 15:57:17.799  INFO 8664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 15:57:17.810  INFO 8664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 15:57:18.830  WARN 8664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 15:57:19.275  INFO 8664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 15:57:19.589  INFO 8664 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 15:57:19.604  INFO 8664 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 15:57:19.616  INFO 8664 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 15:57:19.944  INFO 8664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 15:57:19.947  INFO 8664 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 10.098 seconds (JVM running for 12.599)
+2020-05-22 15:57:27.730  INFO 8664 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 15:57:27.732  INFO 8664 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 15:57:27.759  INFO 8664 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-05-22 16:42:22.977  INFO 13068 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 13068 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 16:42:22.993  INFO 13068 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 16:42:53.441  INFO 13068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 16:42:55.924  INFO 13068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2072ms. Found 2 repository interfaces.
+2020-05-22 16:42:59.192  INFO 13068 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 16:43:05.393  INFO 13068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 16:43:05.588  INFO 13068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 16:43:05.588  INFO 13068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 16:43:05.658  INFO 13068 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 16:43:05.658  INFO 13068 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 16:43:05.658  INFO 13068 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 16:43:05.659  INFO 13068 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 16:43:07.764  INFO 13068 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 16:43:09.214  INFO 13068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 16:43:09.215  INFO 13068 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 44347 ms
+2020-05-22 16:43:09.398  INFO 13068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 16:43:13.194  INFO 13068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 16:43:13.205  INFO 13068 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 16:43:16.461  INFO 13068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 16:43:19.716  INFO 13068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 16:43:26.313  INFO 13068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 16:43:28.989  INFO 13068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 16:43:34.049  INFO 13068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 16:43:34.095  INFO 13068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 16:43:36.614  WARN 13068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 16:43:37.694  INFO 13068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 16:43:38.681  INFO 13068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 16:43:38.945  INFO 13068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 16:43:38.958  INFO 13068 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 16:43:39.963  INFO 13068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 16:43:40.025  INFO 13068 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 95.973 seconds (JVM running for 113.415)
+2020-05-22 16:47:36.888  INFO 13068 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 16:47:36.890  INFO 13068 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 16:47:38.314  INFO 13068 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1424 ms
+2020-05-22 17:01:53.157  INFO 15292 --- [main] com.sliit.cde.CDECCMTApplication         : Starting CDECCMTApplication on DESKTOP-6IHH9AS with PID 15292 (started by PRABHA in E:\Projects\FreeLance\Code complexity measuring tool\algorithemic-complexity-calculator-master\ACC)
+2020-05-22 17:01:53.165  INFO 15292 --- [main] com.sliit.cde.CDECCMTApplication         : No active profile set, falling back to default profiles: default
+2020-05-22 17:01:54.745  INFO 15292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-22 17:01:54.827  INFO 15292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 2 repository interfaces.
+2020-05-22 17:01:55.176  INFO 15292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 17:01:55.621  INFO 15292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-05-22 17:01:55.628  INFO 15292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-22 17:01:55.629  INFO 15292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-05-22 17:01:55.631  INFO 15292 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-05-22 17:01:55.631  INFO 15292 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 17:01:55.631  INFO 15292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 17:01:55.632  INFO 15292 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 17:01:56.715  INFO 15292 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 17:01:56.847  INFO 15292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 17:01:56.847  INFO 15292 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3593 ms
+2020-05-22 17:01:56.905  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-22 17:01:57.070  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-22 17:01:57.091  INFO 15292 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:\Users\PRABHA\AppData\Roaming\cde\data\database'
+2020-05-22 17:01:57.253  INFO 15292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-22 17:01:57.336  INFO 15292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-05-22 17:01:57.455  INFO 15292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-22 17:01:57.600  INFO 15292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-22 17:02:01.026  INFO 15292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-22 17:02:01.060  INFO 15292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 17:02:03.111  WARN 15292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 17:02:03.632  INFO 15292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-22 17:02:04.039  INFO 15292 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-22 17:02:04.055  INFO 15292 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-22 17:02:04.055  INFO 15292 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-22 17:02:04.400  INFO 15292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-22 17:02:04.403  INFO 15292 --- [main] com.sliit.cde.CDECCMTApplication         : Started CDECCMTApplication in 12.044 seconds (JVM running for 16.234)
+2020-05-22 17:02:25.358  INFO 15292 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-22 17:02:25.359  INFO 15292 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-22 17:02:25.374  INFO 15292 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
