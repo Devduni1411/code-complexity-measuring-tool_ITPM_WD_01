@@ -31,7 +31,7 @@ public class CouplingComplexity {
     public void setId(long id) {
         this.id = id;
     }
-
+    //getters setters
     public int getRegularMethodCallingAnotherRegularMethodInTheSameFile() {
         return regularMethodCallingAnotherRegularMethodInTheSameFile;
     }
