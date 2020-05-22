@@ -1,0 +1,181 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="row">
+      <div class="col-sm-5">
+        <div size="small" style="opacity: 98%">
+          <nb-card-body>
+            <label>Enter a project path and a project name</label>
+            <div class="form-group">
+              <input placeholder="Enter the file path" [(ngModel)]="sourcePathForNewScan">
+            </div>
+            <div class="form-group">
+              <input placeholder="Project Name" [(ngModel)]="projectKeyForNewScan">
+            </div>
+            <div class="form-group">
+              <button size="small"
+                      (click)="startNewScan()">Upload a new Project
+              </button>
+            </div>
+          </nb-card-body>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div size="small" style="opacity: 98%">
+          <nb-card-header>
+            <p>List of projects</p>
+          </nb-card-header>
+          <nb-card-body>
+              <button  *ngFor="let project of allProjects" size="small" (click)="selectProject(project)"
+                       style="margin: 5px !important;"
+                       class="off-text-transform">
+                {{project.projectKey}}
+              </button>
+          </nb-card-body>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-12">
+    <nb-card size="large" style="opacity: 95%">
+      <nb-card-header>
+        Files
+        <button size="small" class="float-right" [disabled]="!selectedProject"
+                (click)="openProjectComplexity()">
+          Project complexity
+        </button>
+      </nb-card-header>
+
+      <nb-list *ngIf="selectedProject">
+        <nb-list-item *ngFor="let file of selectedProject.files">
+          <div class="row">
+            <div class="col-sm-12">
+              <button size="small" class="off-text-transform"
+                      (click)="selectAllFilters();openComplexityViewerForFile(file)">
+                {{getFileNameFromPath(file.relativePath)}}</button>
+            </div>
+            <div class="col-sm-12">
+              <label class="label label-padding">Relative path : {{file.relativePath}}</label>
+            </div>
+            <div class="col-sm-12" hidden>
+              <div class="label-padding">
+                <label class="label">View complexity due to</label><br>
+                <button class="right-margin off-text-transform"
+                        (click)="selectCsOnly();openComplexityViewerForFile(file)">Size
+                </button>
+                <button class="right-margin off-text-transform"
+                        (click)="selectCvOnly();openComplexityViewerForFile(file)">Variables
+                </button>
+                <button class="right-margin off-text-transform"
+                        (click)="selectCmOnly();openComplexityViewerForFile(file)">Methods
+                </button>
+                <button class="right-margin off-text-transform"
+                        (click)="selectCiOnly();openComplexityViewerForFile(file)">Inheritance
+                </button>
+                <button class="right-margin off-text-transform"
+                        (click)="selectAllFilters();openComplexityViewerForFile(file)">Coupling
+                </button>
+                <button class="right-margin off-text-transform"
+                        (click)="selectCcsOnly();openComplexityViewerForFile(file)">Control Structure
+                </button>
+              </div>
+            </div>
+          </div>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+</div>
+
+<ng-template #complexityViewer let-ref="dialogRef">
+  <nb-card class="big-width" size="large">
+    <nb-card-header>
+      <div class="row">
+        <div class="col-sm-12">
+          Complexity viewer
+          <button non-nbButton ghost size="small" status="danger" class="float-right" (click)="ref.close()">close
+          </button>
+        </div>
+      </div>
+    </nb-card-header>
+    <nb-card-header *ngIf="false">
+      <div class="row">
+        <div class="col-sm-12">
+          <nb-checkbox [(value)]="filters.showCs" status="success">Cs : Complexity due to size</nb-checkbox>
+          <nb-checkbox [(value)]="filters.showCv" status="info">Cv : Complexity due to variables</nb-checkbox>
+          <nb-checkbox [(value)]="filters.showCm" status="warning">Cm : Complexity due to methods</nb-checkbox>
+          <nb-checkbox [(value)]="filters.showCi" status="danger">Ci : Complexity due to inheritance</nb-checkbox>
+          <nb-checkbox [(value)]="filters.showCcp" status="primary" disabled>Ccp : Complexity due to coupling
+          </nb-checkbox>
+          <nb-checkbox [(value)]="filters.showCcs" status="info">Ccs : Complexity due to control structure</nb-checkbox>
+        </div>
+      </div>
+    </nb-card-header>
+    <nb-card-body>
+      <table style="width: 100%">
+        <tr>
+          <th>no</th>
+          <th>Line</th>
+          <th *ngIf="filters.showCs">Cs</th>
+          <th *ngIf="filters.showCv">Cv</th>
+          <th *ngIf="filters.showCm">Cm</th>
+          <th *ngIf="filters.showCi">Ci</th>
+          <th *ngIf="filters.showCcp" hidden>Ccp</th>
+          <th *ngIf="filters.showCcs">Ccs</th>
+          <th *ngIf="isAllSelected()">Tot</th>
+        </tr>
+        <tr *ngFor="let lineData of selectedFile.linesData">
+          <td><label class="label">{{lineData.lineNo}}</label></td>
+          <td>{{lineData.data}}</td>
+          <td *ngIf="filters.showCs" class="text-success">{{getSizeComplexity(lineData?.sizeComplexity)}}</td>
+          <td *ngIf="filters.showCv" class="text-info">{{getVariableComplexity(lineData?.variableComplexity)}}</td>
+          <td *ngIf="filters.showCm" class="text-warning">{{getMethodComplexity(lineData?.methodComplexity)}}</td>
+          <td *ngIf="filters.showCi" class="text-danger">
+            {{getInheritanceComplexity(lineData?.inheritanceComplexity)}}</td>
+          <td *ngIf="filters.showCcp" class="text-primary" hidden>{{lineData.cnc}}</td>
+          <td *ngIf="filters.showCcs" class="text-info">
+            {{getControlStructureComplexity(lineData?.controlStructureComplexity)}}</td>
+          <td *ngIf="isAllSelected()" class="text-info">{{getSizeComplexity(lineData?.sizeComplexity) +
+          getVariableComplexity(lineData?.variableComplexity) +
+          getMethodComplexity(lineData?.methodComplexity) +
+          lineData.ci +
+          lineData.cnc +
+          lineData.ctc}}</td>
+        </tr>
+      </table>
+    </nb-card-body>
+    <nb-card-footer>
+      <label class="label right-gap">File summary : </label>
+      <label class="label right-gap-long">Cs : {{getFileSummary(selectedFile).sizeComplexity}}</label>
+      <label class="label right-gap-long">Cv : {{getFileSummary(selectedFile).variableComplexity}}</label>
+      <label class="label right-gap-long">Cm : {{getFileSummary(selectedFile).methodComplexity}}</label>
+      <label class="label right-gap-long">Ci : {{getFileSummary(selectedFile).inheritanceComplexity}}</label>
+      <label class="label right-gap-long">Ccs : {{getFileSummary(selectedFile).controlStructureComplexity}}</label>
+      <label class="label right-gap-long">Complexity due to coupling
+        : {{getFileSummary(selectedFile).couplingComplexity}}</label>
+      <label class="label right-gap-long">Total Complexity : {{getFileSummary(selectedFile).sizeComplexity +
+      getFileSummary(selectedFile).variableComplexity +
+      getFileSummary(selectedFile).methodComplexity +
+      getFileSummary(selectedFile).inheritanceComplexity +
+      getFileSummary(selectedFile).controlStructureComplexity +
+      getFileSummary(selectedFile).couplingComplexity}}</label>
+      <!--      <label class="label right-gap-long">Tw : {{getFileSummary(selectedFile).tw}}</label>-->
+    </nb-card-footer>
+  </nb-card>
+</ng-template>
+
+<ng-template #projectComplexityViewer let-ref="dialogRef">
+  <nb-card class="big-width" size="large" style="height: 300px !important;width: 300px !important;">
+    <nb-card-header>
+      <p>Project : {{selectedProject?.projectKey}}</p>
+    </nb-card-header>
+    <nb-card-body *ngIf="selectedProject">
+      <p>Project Complexity : {{calculateProjectComplexity()}}</p>
+    </nb-card-body>
+    <nb-card-footer>
+      <button non-nbButton hero class="float-right" (click)="ref.close()" status="danger" size="small">close</button>
+    </nb-card-footer>
+  </nb-card>
+</ng-template>
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CDE Code Complexity Measuring Tool</title>
+
+  <!--  for web-->
+<!--    <base href="/">-->
+  <!--  for electron-->
+  <base href="./">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<ngx-app></ngx-app>
+
+<style>
+  .lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    /*position:fixed;*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #2c2c2c;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+</style>
+
+<div style="height: 100vh !important;width: 100vw !important;">
+  <div class="lds-ripple">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+</body>
+</html>

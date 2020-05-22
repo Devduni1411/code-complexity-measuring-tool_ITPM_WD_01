@@ -1,0 +1,187 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a class="logo" href="#" (click)="navigateHome()">cde</a>
+  </div>
+  <nb-select hidden [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+  </nb-select>
+</div>
+
+<div class="header-container">
+  <button (click)="openSettings()">
+    Edit weights
+  </button>
+</div>
+
+<ng-template #info let-ref="dialogRef">
+  <nb-card style="width: 500px">
+    <nb-card-header>
+      Meanings of short forms
+    </nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12 form-group">Cs : Complexity due to size</div>
+        <div class="col-sm-12 form-group">Cv : Complexity due to variables</div>
+        <div class="col-sm-12 form-group">Cm : Complexity due to methods</div>
+        <div class="col-sm-12 form-group">Ci : Complexity due to inheritance</div>
+        <div class="col-sm-12 form-group">Ccp : Complexity due to coupling</div>
+        <div class="col-sm-12 form-group">Ccs : Complexity due to control structure</div>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</ng-template>
+
+<ng-template #settings let-ref="dialogRef">
+  <nb-card style="width: 700px" size="large">
+    <nb-card-header>
+      Settings
+    </nb-card-header>
+    <nb-card-body>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="label-padding">
+            <label  >Show weights for : </label><br>
+            <button
+              (click)="selectWeightsForSize()"
+              class="right-margin off-text-transform">Size</button>
+            <button
+              (click)="selectWeightsForVariables()"
+              class="right-margin off-text-transform">Variables</button>
+            <button
+              (click)="selectWeightsForMethods()"
+              class="right-margin off-text-transform">Methods</button>
+            <button
+              (click)="selectWeightsForInheritance()"
+              class="right-margin off-text-transform">Inheritance</button>
+            <button
+              (click)="selectWeightsForCoupling()"
+              class="right-margin off-text-transform">Coupling</button>
+            <button
+              (click)="selectWeightsForControlStructure()"
+              class="right-margin off-text-transform">Control Structure</button>
+          </div>
+          <hr>
+          <div class="row" *ngIf="weightsForSize">
+            <div class="col-sm-12"><h5>Weights related to the size factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Program Component</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Keyword</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForSize.Keyword"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Identifier</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForSize.Identifier"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Operator</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForSize.Operator"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Numerical value</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForSize.NumericalValue"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >String literal</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForSize.StringLiteral"></div></div>
+            </div>
+          </div>
+          <div class="row" *ngIf="weightsForVariables">
+            <div class="col-sm-12"><h5>Weights related to the variable factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Program Component</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Global variable</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForVariables.GlobalVariable"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Local variable</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForVariables.LocalVariable"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Primitive data type variable</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForVariables.PrimitiveDataTypeVariable"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Composite data type variable</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForVariables.CompositeDataTypeVariable"></div></div>
+            </div>
+          </div>
+          <div class="row" *ngIf="weightsForMethods">
+            <div class="col-sm-12"><h5>Weights related to the method factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Program Component</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Method with a primitive return type</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForMethods.MethodWithAPrimitiveReturnType"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Method with a composite return type</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForMethods.MethodWithACompositeReturnType"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Method with a void return type</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForMethods.MethodWithAVoidReturnType"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Primitive data type parameter</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForMethods.PrimitiveDataTypeParameter"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Composite data type parameter</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForMethods.CompositeDataTypeParameter"></div></div>
+            </div>
+          </div>
+          <div class="row" *ngIf="weightsForInheritance">
+            <div class="col-sm-12"><h5>Weights related to the inheritance factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Inherited Pattern</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A class with no inheritance (direct or indirect)</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForInheritance.no"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A class inheriting (directly or indirectly) from one user-defined class</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForInheritance.one"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A class inheriting (directly or indirectly) from two user-defined classes</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForInheritance.two"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A class inheriting (directly or indirectly) from three user-defined classes</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForInheritance.three"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A class inheriting (directly or indirectly) from more than three user-defined classes</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForInheritance.more"></div></div>
+            </div>
+          </div>
+          <div class="row" *ngIf="weightsForCoupling">
+            <div class="col-sm-12"><h5>Weights related to the coupling factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Coupling Type</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive call</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivecall"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method calling another regular method in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodcallinganotherregularmethodinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method calling another regular method in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodcallinganotherregularmethodinadifferentfile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method calling a recursive method in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodcallingarecursivemethodinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method calling a recursive method in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodcallingarecursivemethodinadifferentfile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method calling another recursive method in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodcallinganotherrecursivemethodinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method calling another recursive method in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodcallinganotherrecursivemethodinadifferentfile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method calling a regular method in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodcallingaregularmethodinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method calling a regular method in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodcallingaregularmethodinadifferentfile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method referencing a global variable in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodreferencingaglobalvariableinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A regular method referencing a global variable in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Aregularmethodreferencingaglobalvariableinadifferentfile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method referencing a global variable in the same file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodreferencingaglobalvariableinthesamefile"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A recursive method referencing a global variable in a different file</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForCoupling.Arecursivemethodreferencingaglobalvariableinadifferentfile"></div></div>
+            </div>
+          </div>
+          <div class="row" *ngIf="weightsForControlStructure">
+            <div class="col-sm-12"><h5>Weights related to the control structure factor</h5></div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label  >Control Structure Type</label>
+                </div>
+                <div class="col-sm-7">
+                  <label  >Value</label>
+                </div>
+              </div>
+              <div class="row form-group"><div class="col-sm-5"><label  >A conditional control structure such as an ‘if’ or ‘else-if’ condition</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForControlStructure.Aconditionalcontrolstructuresuchasaniforelseifcondition"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >An iterative control structure such as a ‘for’, ‘while’, or ‘do-while’ loop</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForControlStructure.Aniterativecontrolstructuresuchasaforwhileordowhileloop"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >The ‘switch’ statement in a ‘switch-case’ control structure</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForControlStructure.Theswitchstatementinaswitchcasecontrolstructure"></div></div>
+              <div class="row form-group"><div class="col-sm-5"><label  >Each ‘case’ statement in a ‘switch-case’ control structure</label></div><div class="col-sm-7"><input nbInput type="number" [(ngModel)]="weightValuesForControlStructure.Eachcasestatementinaswitchcasecontrolstructure"></div></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </nb-card-body>
+    <nb-card-footer>
+      <button status="success" class="float-right" size="small"
+              (click)="ref.close();saveNotification()">SAVE</button>
+    </nb-card-footer>
+  </nb-card>
+</ng-template>
